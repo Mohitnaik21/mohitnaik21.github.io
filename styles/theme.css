@@ -1,0 +1,107 @@
+/* Light Theme (default) */
+:root {
+    --bg-color: #ffffff; /* Page background */
+    --text-color: #1f2937; /* Main text color */
+    --navbar-bg: #1f2937;; /* Navbar background */
+    --navbar-text: #ffffff; /* Navbar text color */
+    --accent-color: #2563eb; /* Accent color for links and buttons */
+    --section-bg: #f3f4f6; /* Section background */
+    --hero-bg: linear-gradient(to right, #3b82f6, #9333ea); /* Hero section */
+    --footer-bg: #1f2937; /* Footer background */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow color */
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-color: #1f2937; /* Page background */
+    --text-color: #e5e7eb; /* Main text color */
+    --navbar-bg: #374151; /* Navbar background */
+    --navbar-text: #e5e7eb; /* Navbar text color */
+    --accent-color: #3b82f6; /* Accent color for links and buttons */
+    --section-bg: #2d3748; /* Section background */
+    --hero-bg: linear-gradient(to right, #1d4ed8, #6d28d9); /* Hero section */
+    --footer-bg: #374151; /* Footer background */
+    --shadow-color: rgba(255, 255, 255, 0.1); /* Shadow color */
+}
+
+/* Global styles using variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar styles */
+nav {
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text);
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a {
+    color: var(--navbar-text);
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.bg-hero {
+    background: var(--hero-bg);
+}
+
+/* Section Backgrounds */
+.bg-section {
+    background-color: var(--section-bg);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--navbar-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button styles */
+button.theme-toggle {
+    background-color: var(--section-bg);
+    color: var(--navbar-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.theme-toggle:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+button {
+    background-color: var(--section-bg);
+    color: var(--navbar-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* Link styles */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--text-color);
+}

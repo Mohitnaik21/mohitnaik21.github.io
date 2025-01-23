@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects | Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- AOS (Animate on Scroll) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/animations.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-navbar text-white sticky top-0 z-50 shadow-lg">
+      <div
+        class="container mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <a href="index.html" class="text-2xl font-bold">Mohit Naik</a>
+        <button
+          id="menu-toggle"
+          class="text-xl md:hidden block focus:outline-none"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul
+          id="menu"
+          class="hidden md:flex md:space-x-6 flex-col md:flex-row md:items-center"
+        >
+          <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+          <li>
+            <a href="projects.html" class="hover:text-blue-400">Projects</a>
+          </li>
+          <li><a href="skills.html" class="hover:text-blue-400">Skills</a></li>
+          <li>
+            <a href="achievements.html" class="hover:text-blue-400"
+              >Achievements</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-blue-400">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-20"
+    >
+      <div class="container mx-auto px-6">
+        <h1 class="text-5xl font-bold mb-6" data-aos="fade-up">My Projects</h1>
+        <p
+          class="text-lg md:text-2xl mb-8"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          A showcase of my journey through software engineering, data analysis,
+          and machine learning.
+        </p>
+        <a
+          href="https://github.com/Mohitnaik21"
+          class="px-6 py-3 bg-white text-blue-600 font-medium rounded-md hover:bg-gray-100 transition"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          View My GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Movie Recommendation System -->
+          <div class="bg-white shadow-md rounded-lg p-6" data-aos="zoom-in">
+            <img
+              src="assets/images/MovieRecSys.jpg"
+              alt="Movie Recommendation System"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Movie Recommendation System</h3>
+            <p class="text-gray-600 mb-4">
+              A content-based recommendation system using cosine similarity,
+              integrated with sentiment analysis for enhanced personalization.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">AJAX</span>
+            </div>
+            <a
+              href="https://github.com/Mohitnaik21/Movie-recommendation-system"
+              target="_blank"
+              class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            >
+              View Repository
+            </a>
+          </div>
+
+          <!-- Enhancing Trustworthiness in Bone Anomaly -->
+          <div
+            class="bg-white shadow-md rounded-lg p-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="assets/images/Bone Fracture.jpg"
+              alt="Bone Anomaly Detection"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">
+              Enhancing Trustworthiness in Bone Anomaly and Fracture Detection
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A ResNet50-based deep learning model for fracture detection with
+              enhanced interpretability using Layer-wise Relevance Propagation.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Keras</span>
+              <span class="tag">OpenCV</span>
+            </div>
+            <a
+              href="https://github.com/Mohitnaik21/Bone_Detection_and_Classification"
+              target="_blank"
+              class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            >
+              View Repository
+            </a>
+          </div>
+
+          <!-- Twitter Sentiment Analysis -->
+          <div
+            class="bg-white shadow-md rounded-lg p-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/images/sentiment-analysis.jpg"
+              alt="Twitter Sentiment Analysis"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Twitter Sentiment Analysis</h3>
+            <p class="text-gray-600 mb-4">
+              A real-time sentiment analysis tool built using Tweepy, TextBlob,
+              and Python.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">Python</span>
+              <span class="tag">Tweepy</span>
+              <span class="tag">TextBlob</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+            <button
+              onclick="showPrivateRepoMessage()"
+              class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
+            >
+              Private Repository
+            </button>
+          </div>
+
+          <!-- IALP -->
+          <div
+            class="bg-white shadow-md rounded-lg p-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img
+              src="assets/images/IALP.jpg"
+              alt="IALP"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">IALP</h3>
+            <p class="text-gray-600 mb-4">
+              AI-powered adaptive learning platform with gamification and
+              dynamic difficulty adjustment.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">React</span>
+              <span class="tag">Django</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Gemini AI</span>
+            </div>
+            <button
+              onclick="showPrivateRepoMessage()"
+              class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
+            >
+              Private Repository
+            </button>
+          </div>
+
+          <!-- Simply Cinema -->
+          <div
+            class="bg-white shadow-md rounded-lg p-6"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img
+              src="assets/images/Simplycinema.jpg"
+              alt="Simply Cinema"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Simply Cinema</h3>
+            <p class="text-gray-600 mb-4">
+              An online ticket booking platform featuring seat selection, live
+              updates, and robust security.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">React</span>
+              <span class="tag">Django</span>
+              <span class="tag">AWS</span>
+              <span class="tag">TypeScript</span>
+            </div>
+            <a
+              href="https://github.com/Mohitnaik21/Cinema_Ticket_Booking_Full_Stack"
+              target="_blank"
+              class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            >
+              View Repository
+            </a>
+          </div>
+
+          <!-- Operating Systems Hardening -->
+          <div class="bg-white shadow-md rounded-lg p-6" data-aos="zoom-in">
+            <img
+              src="assets/images/os hardening.webp"
+              alt="Operating Systems Hardening"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Operating Systems Hardening</h3>
+            <p class="text-gray-600 mb-4">
+              A Python-based security automation system for OS configurations,
+              vulnerability reduction, and real-time security metrics
+              visualization.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">Python</span>
+              <span class="tag">Tkinter</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Grafana</span>
+            </div>
+            <button
+              onclick="showPrivateRepoMessage()"
+              class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
+            >
+              Private Repository
+            </button>
+          </div>
+
+          <!-- Pandurang's Revenge -->
+          <div
+            class="bg-white shadow-md rounded-lg p-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="assets/images/Pandurangs revenge.webp"
+              alt="Pandurang's Revenge"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Pandurang's Revenge</h3>
+            <p class="text-gray-600 mb-4">
+              An augmented virtual reality game developed in Unity Engine with
+              immersive characters, sound, and environment.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">Unity</span>
+              <span class="tag">Augmented Reality</span>
+              <span class="tag">Game Development</span>
+            </div>
+            <button
+              onclick="showPrivateRepoMessage()"
+              class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
+            >
+              Private Repository
+            </button>
+          </div>
+
+          <!-- Smart Campus -->
+          <div
+            class="bg-white shadow-md rounded-lg p-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/images/Smart campus .jpg"
+              alt="Smart Campus"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Smart Campus</h3>
+            <p class="text-gray-600 mb-4">
+              A web portal integrated with Oracle database and IoT sensors for
+              managing student and teacher resources.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">Oracle</span>
+              <span class="tag">IoT</span>
+              <span class="tag">Web Development</span>
+            </div>
+            <button
+              onclick="showPrivateRepoMessage()"
+              class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
+            >
+              Private Repository
+            </button>
+          </div>
+
+          <!-- Firewall Detection -->
+          <div
+            class="bg-white shadow-md rounded-lg p-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img
+              src="assets/images/firewall.webp"
+              alt="Firewall Detection"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Firewall Detection</h3>
+            <p class="text-gray-600 mb-4">
+              A machine learning-based JavaScript firewall to classify queries
+              as malicious or safe.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Scikit-learn</span>
+            </div>
+            <a
+              href="https://github.com/Mohitnaik21/Firewall"
+              target="_blank"
+              class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            >
+              View Repository
+            </a>
+          </div>
+
+          <!-- Raft Implementation -->
+          <div
+            class="bg-white shadow-md rounded-lg p-6"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img
+              src="assets/images/RAFT algorithm.png"
+              alt="Raft Implementation"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Raft Implementation</h3>
+            <p class="text-gray-600 mb-4">
+              A Python implementation of the Raft consensus algorithm for
+              distributed systems.
+            </p>
+            <div class="flex flex-wrap gap-2 justify-center mb-4">
+              <span class="tag">Python</span>
+              <span class="tag">Distributed Systems</span>
+              <span class="tag">Algorithms</span>
+            </div>
+            <a
+              href="https://github.com/Mohitnaik21/RAFT_Alorithm"
+              target="_blank"
+              class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            >
+              View Repository
+            </a>
+          </div>
+          <!-- More Projects Coming Soon -->
+          <div
+            class="bg-gray-200 shadow-md rounded-lg p-6 flex items-center justify-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <h3 class="text-xl font-bold text-gray-500">
+              More Projects Coming Soon!
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+      This repository is private and currently not accessible to the public.
+    </div>
+
+    <!-- Call to Action -->
+    <section
+      class="py-16 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center"
+    >
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">
+          Want to See More?
+        </h2>
+        <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
+          Visit my GitHub profile for more projects, or get in touch to
+          collaborate!
+        </p>
+        <a
+          href="https://github.com/Mohitnaik21"
+          class="px-6 py-3 bg-white text-blue-600 font-medium rounded-md hover:bg-gray-100 transition"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Explore GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navbar text-white text-center py-4">
+      <p>&copy; 2025 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Theme Toggle Script
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        themeToggle.textContent = body.classList.contains("dark-mode")
+          ? "☀️"
+          : "🌙";
+      });
+    </script> -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+      // Show toast notification for private repositories
+      function showPrivateRepoMessage() {
+        const toast = document.getElementById("toast");
+        toast.classList.remove("hidden");
+        toast.classList.add("block");
+
+        setTimeout(() => {
+          toast.classList.add("hidden");
+          toast.classList.remove("block");
+        }, 4000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills | Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- AOS (Animate on Scroll) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/animations.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-navbar text-white sticky top-0 z-50 shadow-lg">
+      <div
+        class="container mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <a href="index.html" class="text-2xl font-bold">Mohit Naik</a>
+        <button
+          id="menu-toggle"
+          class="text-xl md:hidden block focus:outline-none"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul
+          id="menu"
+          class="hidden md:flex md:space-x-6 flex-col md:flex-row md:items-center"
+        >
+          <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+          <li>
+            <a href="about.html" class="hover:text-blue-400">About</a>
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-blue-400">Projects</a>
+          </li>
+          <li>
+            <a href="skills.html" class="hover:text-blue-400">Skills</a>
+          </li>
+
+          <li>
+            <a href="achievements.html" class="hover:text-blue-400"
+              >Achievements</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-blue-400">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-20"
+    >
+      <div class="container mx-auto px-6 relative">
+        <h1 class="text-5xl font-bold mb-6" data-aos="fade-up">
+          Skills and Expertise
+        </h1>
+        <p
+          class="text-lg md:text-2xl mb-8"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Explore my technical, professional, and interpersonal skill sets.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-gray-50 text-center">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap md:flex-nowrap justify-center space-y-2 md:space-y-0 md:space-x-4 mb-6">
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500 active" data-tab="languages">
+            Coding Languages
+          </button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="frontend">Front-End</button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="backend">Back-End</button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="databases">Databases</button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="cloud">Cloud Platforms</button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="ml-frameworks">
+            ML Frameworks
+          </button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="data-tools">
+            Data Analysis Tools
+          </button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="visualization">
+            Data Visualization
+          </button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="tools">Other Tools</button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="expertise">
+            General Expertise
+          </button>
+          <button class="tab-btn px-4 py-2 text-sm md:text-base border border-blue-500 rounded-lg text-blue-500" data-tab="softskills">Soft Skills</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="languages" class="tab-content active">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Python -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fab fa-python text-4xl text-blue-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Python</p>
+            </div>
+            <!-- SQL -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-database text-4xl text-orange-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">SQL</p>
+            </div>
+            <!-- C -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-code text-4xl text-green-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">C</p>
+            </div>
+            <!-- C++ -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-code text-4xl text-purple-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">C++</p>
+            </div>
+            <!-- C# -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-code text-4xl text-teal-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">C#</p>
+            </div>
+            <!-- JavaScript -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fab fa-js text-4xl text-yellow-400"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">JavaScript</p>
+            </div>
+            <!-- TypeScript -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-code text-4xl text-blue-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">TypeScript</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Tabs -->
+        <div id="frontend" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- React -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fab fa-react text-4xl text-blue-400"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">React</p>
+            </div>
+            <!-- Angular -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fab fa-angular text-4xl text-red-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Angular</p>
+            </div>
+            <!-- .NET -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-code text-4xl text-purple-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">.NET</p>
+            </div>
+            <!-- HTML -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fab fa-html5 text-4xl text-orange-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">HTML</p>
+            </div>
+            <!-- CSS -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fab fa-css3-alt text-4xl text-blue-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">CSS</p>
+            </div>
+            <!-- Tailwind CSS -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="fas fa-paint-brush text-4xl text-teal-400"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Tailwind</p>
+            </div>
+            <!-- Next.js -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-code-branch text-4xl text-black"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Next.JS</p>
+            </div>
+            <!-- MUI -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="700">
+              <i class="fas fa-layer-group text-4xl text-indigo-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Material-UI</p>
+            </div>
+            <!-- Bootstrap -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="800">
+              <i class="fab fa-bootstrap text-4xl text-purple-800"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Bootstrap</p>
+            </div>
+            <!-- GSAP -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="900">
+              <i class="fas fa-cogs text-4xl text-green-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">GSAP</p>
+            </div>
+            <!-- Framer Motion -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="1000">
+              <i class="fas fa-bolt text-4xl text-yellow-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Framer Motion</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="backend" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Django -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fas fa-server text-4xl text-green-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Django</p>
+            </div>
+            <!-- .NET Core -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-cogs text-4xl text-purple-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">.NET Core</p>
+            </div>
+            <!-- Node.js -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fab fa-node-js text-4xl text-green-400"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Node.js</p>
+            </div>
+            <!-- Express.js -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-code text-4xl text-gray-700"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Express.js</p>
+            </div>
+            <!-- Flask -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-flask text-4xl text-blue-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Flask</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="databases" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- MySQL -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fas fa-database text-4xl text-blue-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">MySQL</p>
+            </div>
+            <!-- Microsoft SQL Server -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-server text-4xl text-red-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Microsoft SQL Server</p>
+            </div>
+            <!-- MongoDB -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-leaf text-4xl text-green-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">MongoDB</p>
+            </div>
+            <!-- SSMS -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-tools text-4xl text-gray-700"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">SSMS</p>
+            </div>
+            <!-- SQLite -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-database text-4xl text-gray-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">SQLite</p>
+            </div>
+            <!-- AWS -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fab fa-aws text-4xl text-orange-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">AWS</p>
+            </div>
+            <!-- PostgreSQL -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="fas fa-database text-4xl text-teal-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">PostgreSQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cloud" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- AWS -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fab fa-aws text-4xl text-orange-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">AWS</p>
+            </div>
+            <!-- Azure -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fab fa-microsoft text-4xl text-blue-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Azure</p>
+            </div>
+            <!-- Git -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fab fa-git-alt text-4xl text-red-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Git</p>
+            </div>
+          </div>
+        </div>
+        <!-- Machine Learning Frameworks -->
+        <div id="ml-frameworks" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- TensorFlow -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fas fa-brain text-4xl text-orange-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">TensorFlow</p>
+            </div>
+            <!-- PyTorch -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-brain text-4xl text-red-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">PyTorch</p>
+            </div>
+            <!-- Scikit-learn -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-code text-4xl text-green-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Scikit-learn</p>
+            </div>
+            <!-- Keras -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-brain text-4xl text-pink-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Keras</p>
+            </div>
+            <!-- Hugging Face -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-heart text-4xl text-purple-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Hugging Face</p>
+            </div>
+            <!-- GPT -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="fas fa-robot text-4xl text-blue-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">GPT</p>
+            </div>
+            <!-- LangChain -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-code-branch text-4xl text-teal-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">LangChain</p>
+            </div>
+            <!-- NLTK -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="700">
+              <i class="fas fa-language text-4xl text-orange-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">NLTK</p>
+            </div>
+            <!-- TextBlob -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="800">
+              <i class="fas fa-text-height text-4xl text-gray-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">TextBlob</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analysis Tools -->
+        <div id="data-tools" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Pandas -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fas fa-table text-4xl text-green-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Pandas</p>
+            </div>
+            <!-- NumPy -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-square text-4xl text-orange-400"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">NumPy</p>
+            </div>
+            <!-- SciPy -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-cogs text-4xl text-teal-400"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">SciPy</p>
+            </div>
+            <!-- OpenCV -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-camera text-4xl text-red-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">OpenCV</p>
+            </div>
+            <!-- Plotly -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-chart-line text-4xl text-blue-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Plotly</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Visualization -->
+        <div id="visualization" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Matplotlib -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fas fa-chart-bar text-4xl text-blue-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Matplotlib</p>
+            </div>
+            <!-- Seaborn -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-chart-area text-4xl text-teal-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Seaborn</p>
+            </div>
+            <!-- Microsoft Excel -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-file-excel text-4xl text-green-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Microsoft Excel</p>
+            </div>
+          </div>
+        </div>
+        <!-- Other Relevant Tools -->
+        <div id="tools" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Postman -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fas fa-envelope-open-text text-4xl text-orange-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Postman</p>
+            </div>
+            <!-- Jupyter Notebook -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-book text-4xl text-blue-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Jupyter Notebook</p>
+            </div>
+            <!-- Google Colab -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-code text-4xl text-yellow-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Google Colab</p>
+            </div>
+            <!-- Flask -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-flask text-4xl text-teal-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Flask</p>
+            </div>
+            <!-- Figma -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-pencil-ruler text-4xl text-pink-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Figma</p>
+            </div>
+            <!-- Selenium -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="fas fa-robot text-4xl text-green-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Selenium</p>
+            </div>
+            <!-- NodeJS -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="600">
+              <i class="fab fa-node text-4xl text-green-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">NodeJS</p>
+            </div>
+            <!-- Swagger -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="700">
+              <i class="fas fa-code-branch text-4xl text-purple-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Swagger</p>
+            </div>
+          </div>
+        </div>
+        <!-- General Expertise -->
+        <div id="expertise" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- REST API -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fas fa-link text-4xl text-blue-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">REST API</p>
+            </div>
+            <!-- Third-party API Integration -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-plug text-4xl text-green-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Third-party API Integration</p>
+            </div>
+            <!-- Automated Testing -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-vial text-4xl text-orange-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Automated Testing</p>
+            </div>
+            <!-- Microservices -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-cogs text-4xl text-purple-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Microservices</p>
+            </div>
+            <!-- Authentication -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-lock text-4xl text-red-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Authentication</p>
+            </div>
+            <!-- Payment Gateway Integration -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="fas fa-credit-card text-4xl text-blue-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Payment Gateway Integration</p>
+            </div>
+            <!-- JWT Tokenization -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-shield-alt text-4xl text-green-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">JWT Tokenization</p>
+            </div>
+            <!-- Recommendation Systems -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="700">
+              <i class="fas fa-thumbs-up text-4xl text-purple-700"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Recommendation Systems</p>
+            </div>
+            <!-- Visualization -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="800">
+              <i class="fas fa-chart-line text-4xl text-orange-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Visualization</p>
+            </div>
+            <!-- Classification -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="900">
+              <i class="fas fa-clone text-4xl text-teal-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Classification</p>
+            </div>
+            <!-- AI/ML -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="1000">
+              <i class="fas fa-brain text-4xl text-red-400"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">AI/ML</p>
+            </div>
+            <!-- LLMs -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="1100">
+              <i class="fas fa-robot text-4xl text-blue-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">LLMs</p>
+            </div>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div id="softskills" class="tab-content">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Analytical Problem Solving -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up">
+              <i class="fas fa-brain text-4xl text-blue-500"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Analytical Problem Solving</p>
+            </div>
+            <!-- Driving Business Impact -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-chart-line text-4xl text-green-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Driving Business Impact</p>
+            </div>
+            <!-- Problem Solving Skills -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-lightbulb text-4xl text-yellow-400"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">Problem Solving Skills</p>
+            </div>
+            <!-- Cross-Functional Team Collaboration -->
+            <div class="skill-box p-4 bg-white shadow-md rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-users text-4xl text-purple-600"></i>
+              <p class="mt-2 text-sm md:text-base font-medium">
+                Cross-Functional Team Collaboration
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navbar text-white text-center py-4">
+      <p>&copy; 2025 Mohit Naik. All rights reserved.</p>
+    </footer>
+
+    <!-- Tab Switching Script -->
+    <script>
+      document.querySelectorAll(".tab-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          // Remove active class from all buttons and tab contents
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+          document
+            .querySelectorAll(".tab-content")
+            .forEach((content) => content.classList.remove("active"));
+
+          // Add active class to clicked button and corresponding tab content
+          button.classList.add("active");
+          document.getElementById(button.dataset.tab).classList.add("active");
+        });
+      });
+    </script>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
