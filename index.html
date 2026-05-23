@@ -43,7 +43,7 @@
         </p>
         <div class="hero-actions" aria-label="Primary actions">
           <a href="#work">View selected work</a>
-          <a href="mailto:mohit.naik@uga.edu">Contact me</a>
+          <a href="#contact">Contact me</a>
         </div>
       </section>
 
@@ -255,7 +255,16 @@
             and practical ownership matter.
           </p>
           <div class="contact-links" aria-label="Contact links">
-            <a href="mailto:mohit.naik@uga.edu">Email</a>
+            <button
+              id="email-copy"
+              class="copy-email"
+              type="button"
+              data-email="mohit.naik@uga.edu"
+              aria-describedby="email-tooltip"
+            >
+              Email
+              <span id="email-tooltip" class="email-tooltip" role="tooltip">mohit.naik@uga.edu</span>
+            </button>
             <a href="https://linkedin.com/in/mohit-naik21" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/Mohitnaik21" target="_blank" rel="noreferrer">GitHub</a>
           </div>
@@ -263,10 +272,41 @@
       </section>
     </main>
 
+    <div id="copy-toast" class="copy-toast" role="status" aria-live="polite">
+      Email copied to clipboard
+    </div>
+
     <footer class="site-footer">
       <div class="page-shell">
         <p>Mohit Naik</p>
       </div>
     </footer>
+
+    <script>
+      const emailButton = document.getElementById("email-copy");
+      const copyToast = document.getElementById("copy-toast");
+
+      function showCopyToast(message) {
+        copyToast.textContent = message;
+        copyToast.classList.add("is-visible");
+        window.setTimeout(() => {
+          copyToast.classList.remove("is-visible");
+        }, 2200);
+      }
+
+      async function copyEmail() {
+        const email = emailButton.dataset.email;
+
+        try {
+          await navigator.clipboard.writeText(email);
+          showCopyToast("Email copied to clipboard");
+        } catch (error) {
+          window.location.href = `mailto:${email}`;
+          showCopyToast("Opening email client");
+        }
+      }
+
+      emailButton.addEventListener("click", copyEmail);
+    </script>
   </body>
 </html>
